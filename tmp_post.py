@@ -7,9 +7,7 @@ from time import sleep
 import smbus
 
 TMP_PIN = 18
-# apiArr = ["xoxb-316484177447-588015670261-gQJ4xUMbKsRB3L20QP6ozgQI", "東京エアポリス","エアポリスマン",":male-police-officer:"]
-apiArr = ["xoxb-290828624598-447765576516-H1DfZGQzjzFWvRyskYQ0YsE5", "愛のボット開発メモリー","お天気お爺さん",":older_man::skin-tone-6:"]
-# apiArr = ["xoxb-421996460261-586302159939-g9stehE07scqlzFjnvElR4Cf", "エアポリス","エアポリスマン",":male-police-officer:"]
+apiArr = ["slackUrl", "slackRoom","slackbotName","slackbotIcon"]
 
 GPIO.setmode(GPIO.BCM)
 
