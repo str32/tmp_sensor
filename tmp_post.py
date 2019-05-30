@@ -10,7 +10,7 @@ import smbus
 # Correct here #
 ################
 #TMP_PIN = syour_select_pin_number
-apiArr = ["slackUrl", "slackRoom","slackbotName","slackbotIcon"]
+#apiArr = ["slackUrl", "slackRoom","slackbotName","slackbotIcon"]
 
 GPIO.setmode(GPIO.BCM)
 
@@ -110,9 +110,7 @@ if __name__ == '__main__':
 
     lcd_string("Send complete", LCD_LINE_1)
     lcd_string("message in Slack", LCD_LINE_2)
-    sleep(5)
-
-    # print("気温："+str(value["tmpNum"])+"C\n湿度："+str(value["hmdNum"])+"%\n不快指数："+str(value["thIndex"]))
+    sleep(3)
 
     LCD_BACKLIGHT = 0x00  #バックライトオフ
     lcd_byte(0x01, LCD_CMD) #表示内容クリア

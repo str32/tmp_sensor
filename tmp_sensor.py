@@ -108,15 +108,13 @@ if __name__ == '__main__':
     if value["tmpNum"] != 0 and value["hmdNum"] != 0:
 
         # green pin
-#        if value["thIndex"] < 75:
-        if value["thIndex"] <= 70:
+        if value["thIndex"] < 75:
             GPIO.output(GREEN_PIN, True)
         else:
             GPIO.output(GREEN_PIN, False)
 
         # blue pin
-#        if value["thIndex"] > 70 and value["thIndex"] < 85:
-        if value["thIndex"] > 70 and value["thIndex"] <= 80:
+        if value["thIndex"] > 70 and value["thIndex"] < 85:
             GPIO.output(BLUE_PIN, True)
         else:
             GPIO.output(BLUE_PIN, False)
@@ -132,10 +130,8 @@ if __name__ == '__main__':
         
         lcd_string("tmp:"+str(value["tmpNum"])+"C hmd:"+str(value["hmdNum"])+"%", LCD_LINE_1)
         lcd_string("thIndex:"+str(value["thIndex"]), LCD_LINE_2)
-        sleep(5)
+        sleep(3)
 
-        # print("気温："+str(value["tmpNum"])+"C\n湿度："+str(value["hmdNum"])+"%\n不快指数："+str(value["thIndex"]))
-        
         LCD_BACKLIGHT = 0x00  #バックライトオフ
         lcd_byte(0x01, LCD_CMD) #表示内容クリア
         GPIO.cleanup()
