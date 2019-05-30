@@ -10,7 +10,10 @@ offCount = 0
 cmdTH = "sudo python slider/tmp_sensor.py"
 cmdSD = "sudo python slider/tmp_post.py"
 
-BTN_PIN = 17
+################
+# Correct here #
+################
+# BTN_PIN = your_select_pin_number
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(BTN_PIN, GPIO.IN, pull_up_down = GPIO.PUD_UP)

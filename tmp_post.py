@@ -6,7 +6,10 @@ import RPi.GPIO as GPIO
 from time import sleep
 import smbus
 
-TMP_PIN = 18
+################
+# Correct here #
+################
+#TMP_PIN = syour_select_pin_number
 apiArr = ["slackUrl", "slackRoom","slackbotName","slackbotIcon"]
 
 GPIO.setmode(GPIO.BCM)

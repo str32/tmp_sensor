@@ -89,10 +89,13 @@ def tmp_get(TMP_PIN):
 
 if __name__ == '__main__':
     #Define GPIO to LCD mapping
-    TMP_PIN = 18
-    RED_PIN = 19
-    BLUE_PIN = 20
-    GREEN_PIN = 21
+    ################
+    # Correct here #
+    ################
+    #TMP_PIN = your_select_pin_number
+    #RED_PIN = your_select_pin_number
+    #BLUE_PIN = your_select_pin_nubmer
+    #GREEN_PIN = your_select_pin_number
 
     #initialize GPIO
     GPIO.setmode(GPIO.BCM)
